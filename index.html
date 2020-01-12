@@ -17,10 +17,15 @@
 <body>
 
 <nav class="nav container-fluid">
-    <a href="#">Nav 1</a>
-    <a href="#">Nav 2</a>
-    <a href="#">Nav 3</a>
-    <a href="#">Nav 4</a>
+    <div class="nav__logo">
+        <img class="logo" src="./src/img/logo-full.png"
+             alt="Świeża Paka Logo">
+    </div>
+    <div class="nav-items">
+        <button class="btn-main btn-2"><a href="#"><span class="span-main">O Nas</span></a></button>
+        <button class="btn-main btn-2"><a href="#"><span class="span-main">Produkty</span></a></button>
+        <button class="btn-main btn-2"><a href="#"><span class="span-main">Kontakt</span></a></button>
+    </div>
 </nav>
 
 <div class="container-fluid">
@@ -31,12 +36,12 @@
                 Twoja przeglądarka nie wspiera wyświetlania filmów w tle!
             </video>
         </div>
-        <div class="header__jumbotron jumbotron-fluid">
-            <h1 class="display-4">Świeże owoce dla Twojej firmy</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <div class="header__jumbotron">
+            <h1 class="display-3">Świeże owoce dla Twojej firmy</h1>
+            <h4 class="display-5">Dostarczane raz w tygodniu do Twojego biura, dla Twoich pracowników.</h4>
             <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            <a class="btn btn-light btn-lg" href="#" role="button">Dowiedz się więcej</a>
+            <a class="btn btn-outline-light btn-lg" href="#" role="button">Skontaktuj się</a>
         </div>
     </div>
 </div>

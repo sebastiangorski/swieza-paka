@@ -1,8 +1,19 @@
 .nav {
   position: absolute;
   display: flex;
-  justify-content: flex-end;
+  height: 100px;
+  justify-content: space-between;
   z-index: 1;
-  background-color: #fff;
-  padding: 20px;
+  //background-color: rgba(255,255,255,0.5);
+
+  &__logo {
+    z-index: 2;
+    overflow: hidden;
+  }
+}
+
+.logo {
+  margin-left: 70px;
+  width: 300px;
+  height: 300px;
 }

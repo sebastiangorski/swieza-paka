@@ -1,16 +1,93 @@
+.btn-main {
+  display: inline-block;
+  position: relative;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 20px 30px; }
+  .btn-main > a:link, .btn-main a:visited {
+    text-decoration: none;
+    color: #fff; }
+
+.span-main {
+  display: block;
+  padding: 20px 40px; }
+
+.btn-main::before, .btn-main::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #fff; }
+
+.span-main::before, .span-main::after {
+  content: "";
+  width: 2px;
+  height: 0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #fff; }
+
+.btn-main:hover::before, .btn-main:hover::after {
+  width: 100%; }
+
+.btn-main:hover .span-main::before, .btn-main:hover .span-main::after {
+  height: 100%; }
+
+.btn-2::before, .btn-2::after {
+  transition-delay: 0s; }
+
+.btn-2 .span-main::before, .btn-2 .span-main::after {
+  transition-delay: 0.2s; }
+
+.btn-2::before {
+  right: 0;
+  top: 0; }
+
+.btn-2::after {
+  left: 0;
+  bottom: 0; }
+
+.btn-2 .span-main::before {
+  left: 0;
+  top: 0; }
+
+.btn-2 .span-main::after {
+  right: 0;
+  bottom: 0; }
+
+.btn-2:hover::before, .btn-2:hover::after {
+  transition-delay: 0.2s; }
+
+.btn-2:hover .span-main::before, .btn-2:hover .span-main::after {
+  transition-delay: 0s; }
+
 .nav {
   position: absolute;
   display: flex;
-  justify-content: flex-end;
-  z-index: 1;
-  background-color: #fff;
-  padding: 20px; }
+  height: 100px;
+  justify-content: space-between;
+  z-index: 1; }
+  .nav__logo {
+    z-index: 2;
+    overflow: hidden; }
+
+.logo {
+  margin-left: 70px;
+  width: 300px;
+  height: 300px; }
 
 .header {
   height: 100vh;
   display: flex;
   justify-content: flex-start;
   align-items: center; }
+  .header__jumbotron {
+    margin-left: 30px;
+    color: #fff; }
 
 .bg-video {
   position: absolute;
