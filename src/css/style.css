@@ -4,9 +4,9 @@
   background: none;
   border: none;
   color: #fff;
-  font-size: 18px;
+  font-size: 20px;
   cursor: pointer;
-  margin: 20px 30px; }
+  margin: 20px 25px; }
   .btn-main > a:link, .btn-main a:visited {
     text-decoration: none;
     color: #fff; }
