@@ -1,0 +1,34 @@
+{
+  "name": "swieza-paka",
+  "version": "1.0.0",
+  "description": "Website for Świeża Paka - Fruit catering company from Lublin, Poland",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:sass": "node-sass ./src/sass/main.scss ./src/css/style.css -w",
+    "devserver": "live-server --browser=chrome",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "node-sass ./src/sass/main.scss ./src/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' ./src/css/style.comp.css -o ./src/css/style.prefix.css",
+    "compress:css": "node-sass ./src/css/style.prefix.css ./src/css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "author": {
+    "name": "Sebastian Górski",
+    "email": "sebastian@gorski.work",
+    "url": "http://www.gorski.work"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.3",
+    "concat": "^1.0.3",
+    "node-sass": "^4.13.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.0"
+  }
+}
