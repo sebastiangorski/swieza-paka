@@ -1,19 +1,86 @@
-.nav {
-  position: absolute;
-  display: flex;
-  height: 100px;
-  justify-content: space-between;
-  z-index: 1;
-  //background-color: rgba(255,255,255,0.5);
+// Styling for the navbar
+#mainNav {
+  background-color: rgba(255,255,255,0.0); // TODO: Should use bootstrap colors vars
+  .navbar-toggler {
+    font-size: 12px;
+    right: 0;
+    padding: 13px;
+    text-transform: uppercase;
+    color: white;
+    border: 0;
+    background-color: $primary;
+  }
+  .navbar-brand {
+    color: pink; // TODO: Should use bootstrap colors vars
+    &.active,
+    &:active,
+    &:focus,
+    &:hover {
+      color: darken($primary, 10%);
+    }
+  }
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        font-size: 90%;
+        font-weight: 400;
+        padding: 0.75em 0;
+        letter-spacing: 1px;
+        color: white;
 
-  &__logo {
-    z-index: 2;
-    overflow: hidden;
+        &.active,
+        &:hover {
+          text-decoration: none;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+@media(min-width:992px) {
+  #mainNav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: transparent;
+    .navbar-brand {
+      font-size: 1.75em;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          padding: 1.1em 0 !important;
+        }
+      }
+    }
+    &.navbar-shrink { // Shrink navbar styles
+      padding-top: 0;
+      padding-bottom: 0;
+      background-color: rgba(255,255,255,0.9);
+      .navbar-brand {
+        font-size: 1.25em;
+        padding: 12px 0;
+      }
+      .logo {
+        width: 200px !important;
+        height: auto !important;
+      }
+    }
   }
 }
 
 .logo {
-  margin-left: 70px;
-  width: 300px;
-  height: 300px;
+  width: 300px !important;
+  height: auto !important;
+
+  @media (max-width: 450px) {
+    width: 200px !important;
+  }
 }
+

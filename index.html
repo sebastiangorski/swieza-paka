@@ -7,45 +7,81 @@
 
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/vendors/bootstrap/bootstrap.min.css">
+    <link href="./src/vendors/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="./src/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./src/img/favicon/favicon-16x16.png">
 
     <title>Świeża Paka - Catering owocowy dla firm</title>
+    <meta name="description" content="Zajmujemy się dostarczaniem świeżych owoców bezpośrednio do firm.">
 </head>
-<body>
 
-<nav class="nav container-fluid">
-    <div class="nav__logo">
-        <img class="logo" src="./src/img/logo-full.png"
-             alt="Świeża Paka Logo">
-    </div>
-    <div class="nav__items">
-        <button class="btn-main btn-2"><a href="#"><span class="span-main">O Nas</span></a></button>
-        <button class="btn-main btn-2"><a href="#"><span class="span-main">Produkty</span></a></button>
-        <button class="btn-main btn-2"><a href="#"><span class="span-main">Kontakt</span></a></button>
+<body id="page-top">
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                    <img class="logo" src="./src/img/logo%20kolor%20white-text%20right.svg"
+                         alt="Świeża Paka Logo">
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav text-uppercase ml-auto">
+                <li class="nav-item">
+                    <a class="btn-main btn-2 nav-link js-scroll-trigger" href="#services"><span class="span-main">O nas</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn-main btn-2 nav-link js-scroll-trigger" href="#portfolio"><span class="span-main">Produkty</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn-main btn-2 nav-link js-scroll-trigger" href="#about"><span class="span-main">Kontakt</span></a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
 
-<div class="container-fluid">
-    <div class="header">
-        <div class="bg-video">
-            <video class="bg-video__video" autoplay muted loop>
-                <source src="src/img/videos/Green-Apples.mp4" type="video/mp4">
-                Twoja przeglądarka nie wspiera wyświetlania filmów w tle!
-            </video>
-        </div>
-        <div class="header__jumbotron">
-            <h1 class="head1 display-3">Świeże owoce dla Twojej firmy</h1>
-            <h4 class="head4 display-5">Dostarczane raz w tygodniu do Twojego biura, dla Twoich pracowników.</h4>
-            <hr class="my-4">
-            <a class="btn btn-light btn-lg" href="#" role="button">Dowiedz się więcej</a>
-            <a class="btn btn-outline-light btn-lg" href="#" role="button">Skontaktuj się</a>
+<header>
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="src/img/videos/Green-Apples.mp4" type="video/mp4">
+        Twoja przeglądarka nie wspiera wyświetlania filmów w tle!
+    </video>
+    <div class="container vh-100">
+        <div class="d-flex vh-100 align-items-center">
+            <div class="vw-100 text-white">
+                <div class="header__jumbotron">
+                    <h1 class="display-3">Świeże owoce dla Twojej firmy</h1>
+                    <h4 class="display-5">Dostarczane raz w tygodniu do Twojego biura, dla Twoich pracowników.</h4>
+                    <hr class="my-4">
+                    <a class="btn btn-light btn-lg" href="#" role="button">Dowiedz się więcej</a>
+                    <a class="btn btn-outline-light btn-lg" href="#" role="button">Skontaktuj się</a>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</header>
 
+<section class="my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <p>The HTML5 video element uses an mp4 video as a source. Change the source video to add in your own background! The header text is vertically centered using flex utilities that are build into Bootstrap 4.</p>
+                <p>The overlay color can be changed by changing the <code>background-color</code> of the <code>.overlay</code> class in the CSS.</p>
+                <p>Set the mobile fallback image in the CSS by changing the background image of the header element within the media query at the bottom of the CSS snippet.</p>
+                <p class="mb-0">
+                    Created by <a href="https://startbootstrap.com">Start Bootstrap</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Scripts -->
 <script src="./src/vendors/jquery/jquery.slim.min.js"></script>
 <script src="./src/vendors/bootstrap/bootstrap.bundle.min.js"></script>
 <script src="./src/js/main.js"></script>
