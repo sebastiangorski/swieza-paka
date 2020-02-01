@@ -1,8 +1,12 @@
 @import "./../../node_modules/bootstrap/scss/bootstrap";
 
 @import "base/base";
+@import "base/typography";
 
 @import "components/button";
 
 @import "layout/navigation";
 @import "layout/header";
+@import "layout/footer";
+
+
